@@ -1,0 +1,19 @@
+.hop {
+	text {
+		dominant-baseline: middle;
+		font-size: calc(var(--map-scale) * 16px);
+		text-anchor: middle;
+	}
+
+	.hop-arc {
+		fill: transparent;
+		pointer-events: none;
+		stroke: var(--action-teal);
+		stroke-width: calc(var(--map-scale) * 2px);
+	}
+
+	.hop-label {
+		transform: translate(-50%, -50%);
+		// transform-origin: 50% 50%;
+	}
+}

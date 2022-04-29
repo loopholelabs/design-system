@@ -1,0 +1,40 @@
+$pure-black: #000;
+$black-tint1: #0d1015;
+$black-tint2: #191c20;
+$action-teal: #71fff6;
+$selected-yellow: #fad14f;
+$pure-white: #fff;
+$off-white: #ffffff8b;
+
+$action-color: #71fff6;
+$selected-color: #fad14f;
+$ui-background-color: #0f151c;
+
+:root {
+	--hue-shift: 0deg;
+
+	@include generateHSLCustomPropertiesFromColor('pure-black', $pure-black);
+	@include generateHSLCustomPropertiesFromColor('black-tint1', $black-tint1);
+	@include generateHSLCustomPropertiesFromColor('black-tint2', $black-tint2);
+	@include generateHSLCustomPropertiesFromColor('action-teal', $action-teal);
+	@include generateHSLCustomPropertiesFromColor('selected-yellow', $selected-yellow);
+	@include generateHSLCustomPropertiesFromColor('pure-white', $pure-white);
+	@include generateHSLCustomPropertiesFromColor('off-white', $off-white);
+
+	@include generateHSLCustomPropertiesFromColor('background-color', $pure-black);
+	@include generateHSLCustomPropertiesFromColor('text-color', $pure-white);
+
+	--transparent: transparent;
+
+	--button-default-background-color: var(--transparent);
+	--button-default-text-color: var(--off-white);
+
+	--button-hover-background-color: var(--off-white);
+	--button-hover-text-color: var(--black-tint1);
+
+	--button-primary-default-background-color: var(--transparent);
+	--button-primary-default-text-color: var(--action-teal);
+
+	--button-primary-hover-background-color: var(--action-teal);
+	--button-primary-hover-text-color: var(--black-tint1);
+}

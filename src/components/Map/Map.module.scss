@@ -1,0 +1,11 @@
+.map {
+	&:hover .cell {
+	}
+
+	.cell {
+		fill: var(--off-white);
+		opacity: 0.3;
+		transition-duration: 0.1s;
+		transition-property: opacity;
+	}
+}
